@@ -24,12 +24,12 @@ class PrepareBaseModelPipeline:
 
 if __name__ == "__main__":
     try:
-        logger.info(f">>>>>> state {STAGE_NAME} started <<<<<<")
+        logger.info(f">>>>>> stage: {STAGE_NAME} started <<<<<<")
 
         obj = PrepareBaseModelPipeline()
         obj.main()
 
-        logger.info(f">>>>>> state {STAGE_NAME} completed <<<<<<")
+        logger.info(f">>>>>> stage: {STAGE_NAME} completed <<<<<<")
 
     except Exception as e:
         logger.exception(e)

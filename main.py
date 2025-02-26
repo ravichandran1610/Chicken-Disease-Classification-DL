@@ -5,12 +5,12 @@ from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelP
 STAGE_NAME = "Data Ingestion Stage"
 
 try:
-    logger.info(f">>>>>> state {STAGE_NAME} started <<<<<<")
+    logger.info(f">>>>>> stage: {STAGE_NAME} started <<<<<<")
 
     data_ingestion = DataIngestionTrainingPipeline()
     data_ingestion.main()
 
-    logger.info(f">>>>>> state {STAGE_NAME} completed <<<<<< \n\n X===================X")
+    logger.info(f">>>>>> stage: {STAGE_NAME} completed <<<<<< \n\n X===================X")
 
 except Exception as e:
     logger.exception(e)
@@ -21,12 +21,12 @@ except Exception as e:
 STAGE_NAME = "Prepare Base Model Stage"
 
 try:
-    logger.info(f">>>>>> state {STAGE_NAME} started <<<<<<")
+    logger.info(f">>>>>> stage: {STAGE_NAME} started <<<<<<")
 
     prepare_base_model = PrepareBaseModelPipeline()
     prepare_base_model.main()
 
-    logger.info(f">>>>>> state {STAGE_NAME} completed <<<<<< \n\n X===================X")
+    logger.info(f">>>>>> stage: {STAGE_NAME} completed <<<<<< \n\n X===================X")
 
 except Exception as e:
     logger.exception(e)
